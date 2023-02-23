@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<head> 
+		<meta charset = "utf-8"> 
+		<link rel="stylesheet" href="..\..\internal\report\style.css">
+		<title>RAFT-Report</title>
+		<link rel="icon" type="image/x-icon" href="C:\Users\NeerajGhate\Downloads\mohamed-nohassi-odxB5oIG_iA-unsplash.jpg">
+		
+	 </head>
+</head>
+<body>
+    <header>
+		<img src ="https://assets.website-files.com/625fb6d51a445372e472101c/6278f9d483e32b7fd88948bc_rt_full-logo2.svg">
+			<!--   <nav>...</nav>  use this if a navbar is required in HTML -->
+	  </header>
+	<div class ="all">
+		<div class="tab">
+			<button class="tablinks active" onclick="openTab(event, 'Tab1')">Report</button>
+			<button class="tablinks" onclick="openTab(event, 'Tab2')">Analysis</button>
+		</div>
+	
+		<div id="Tab1" class="tabcontent">
+			<h2>Detail Information of Test Report</h2>
+			<div class="table">
+				{{ my_table }}
+			  </div>
+		</div>
+	
+		<div id="Tab2" class="tabcontent">
+			<h2>Overall Analysis of Test Report</h2>
+			<img src ="..\..\internal\report\Test_Report_pie_FAA_FL.png" style="object-fit:contain; width: 700px; height:500px; border: solid 50px #CCC"/>
+			<img src ="..\..\internal\report\Test_Report_bar_FAA_FL.png" style="object-fit:contain; width: 700px; height:500px; border: solid 50px #CCC"/>
+		</div>
+	</div>
+	
+
+	<script>
+		function openTab(evt, tabName) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	</script>
+</div>
+<div class="footer" position="fixed" bottom= "0" padding= "10px">
+	<h2>RealThingks GmbH  2022</h2>
+</div>
+</body>
+</html>
