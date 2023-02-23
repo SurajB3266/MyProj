@@ -1,0 +1,95 @@
+ *   Implicit S/R API:
+ *   -----------------
+ *   Ascc_St_Req_Na Rte_IRead_RAFT_SWC_Main_Ascc_St_Req_Na_Ascc_St_Req_Na(void)
+ *   Asmc_1000Hz_F_Cmd_AlvCtr Rte_IRead_RAFT_SWC_Main_Asmc_1000Hz_F_Cmd_AlvCtr_Asmc_1000Hz_F_Cmd_AlvCtr(void)
+ *   Asmc_1000Hz_F_Cmd_Crc Rte_IRead_RAFT_SWC_Main_Asmc_1000Hz_F_Cmd_Crc_Asmc_1000Hz_F_Cmd_Crc(void)
+ *   Asmc_100Hz_Sts_VehStaty_AlvCtr Rte_IRead_RAFT_SWC_Main_Asmc_100Hz_Sts_VehStaty_AlvCtr_Asmc_100Hz_Sts_VehStaty_AlvCtr(void)
+ *   Asmc_100Hz_Sts_VehStaty_Crc Rte_IRead_RAFT_SWC_Main_Asmc_100Hz_Sts_VehStaty_Crc_Asmc_100Hz_Sts_VehStaty_Crc(void)
+ *   Asmc_100Hz_Zl_Mofr_AlvCtr Rte_IRead_RAFT_SWC_Main_Asmc_100Hz_Zl_Mofr_AlvCtr_Asmc_100Hz_Zl_Mofr_AlvCtr(void)
+ *   Asmc_25Hz_Sts_AlvCtr Rte_IRead_RAFT_SWC_Main_Asmc_25Hz_Sts_AlvCtr_Asmc_25Hz_Sts_AlvCtr(void)
+ *   Asmc_Req_DaHlthTest_Na Rte_IRead_RAFT_SWC_Main_Asmc_Req_DaHlthTest_Na_Asmc_Req_DaHlthTest_Na(void)
+ *   sint16 Rte_IRead_RAFT_SWC_Main_Faa_F_Fl_AtActr_Cmd_Nwt_Faa_F_Fl_AtActr_Cmd_Nwt(void)
+ *   sint16 Rte_IRead_RAFT_SWC_Main_Faa_F_Fr_AtActr_Cmd_Nwt_Faa_F_Fr_AtActr_Cmd_Nwt(void)
+ *   sint16 Rte_IRead_RAFT_SWC_Main_Faa_F_Rl_AtActr_Cmd_Nwt_Faa_F_Rl_AtActr_Cmd_Nwt(void)
+ *   sint16 Rte_IRead_RAFT_SWC_Main_Faa_F_Rr_AtActr_Cmd_Nwt_Faa_F_Rr_AtActr_Cmd_Nwt(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Frq_Fn_ZlFil_Ce_Hz_Faa_Frq_Fn_ZlFil_Ce_Hz(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Frq_Re_ZlFil_Ce_Hz_Faa_Frq_Re_ZlFil_Ce_Hz(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Gain_Fn_ZlFil_Na_Faa_Gain_Fn_ZlFil_Na(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Gain_Re_ZlFil_Na_Faa_Gain_Re_ZlFil_Na(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Mofr_Fn_ZlGain_Na_Faa_Mofr_Fn_ZlGain_Na(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Mofr_Re_ZlGain_Na_Faa_Mofr_Re_ZlGain_Na(void)
+ *   Faa_Sts_F_Qfr_Na Rte_IRead_RAFT_SWC_Main_Faa_Sts_F_Qfr_Na_Faa_Sts_F_Qfr_Na(void)
+ *   Faa_Sts_ZlMofr_Fn_Qfr_Na Rte_IRead_RAFT_SWC_Main_Faa_Sts_ZlMofr_Fn_Qfr_Na_Faa_Sts_ZlMofr_Fn_Qfr_Na(void)
+ *   Faa_Sts_ZlMofr_Re_Qfr_Na Rte_IRead_RAFT_SWC_Main_Faa_Sts_ZlMofr_Re_Qfr_Na_Faa_Sts_ZlMofr_Re_Qfr_Na(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Wi_Fn_ZlFil_Na_Faa_Wi_Fn_ZlFil_Na(void)
+ *   uint8 Rte_IRead_RAFT_SWC_Main_Faa_Wi_Re_ZlFil_Na_Faa_Wi_Re_ZlFil_Na(void)
+ *   Fas_Sts_VehSpdLo_Na Rte_IRead_RAFT_SWC_Main_Fas_Sts_VehSpdLo_Na_Fas_Sts_VehSpdLo_Na(void)
+ *   Fas_Sts_VehStaty_Na Rte_IRead_RAFT_SWC_Main_Fas_Sts_VehStaty_Na_Fas_Sts_VehStaty_Na(void)
+ *   Fas_Sts_VehStsSpdLo_Qfr_Na Rte_IRead_RAFT_SWC_Main_Fas_Sts_VehStsSpdLo_Qfr_Na_Fas_Sts_VehStsSpdLo_Qfr_Na(void)
+ *   Fas_Sts_VehStsStaty_Qfr_Na Rte_IRead_RAFT_SWC_Main_Fas_Sts_VehStsStaty_Qfr_Na_Fas_Sts_VehStsStaty_Qfr_Na(void)
+ *
+ *********************************************************************************************************************/
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of documentation area >>                  DO NOT CHANGE THIS COMMENT!
+ * Symbol: RAFT_SWC_Main_doc
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of documentation area >>                    DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+FUNC(void, RAFT_SWC_CODE) RAFT_SWC_Main(void) /* PRQA S 0624, 3206 */ /* MD_Rte_0624, MD_Rte_3206 */
+{
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of runnable implementation >>             DO NOT CHANGE THIS COMMENT!
+ * Symbol: RAFT_SWC_Main
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of runnable implementation >>               DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+}
+
+
+#define RAFT_SWC_STOP_SEC_CODE
+#include "RAFT_SWC_MemMap.h" /* PRQA S 5087 */ /* MD_MSR_MemMap */
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of function definition area >>            DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of function definition area >>              DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << Start of removed code area >>                   DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+
+/**********************************************************************************************************************
+ * DO NOT CHANGE THIS COMMENT!           << End of removed code area >>                     DO NOT CHANGE THIS COMMENT!
+ *********************************************************************************************************************/
+
+/**********************************************************************************************************************
+ MISRA 2012 violations and justifications
+ *********************************************************************************************************************/
+
+/* module specific MISRA deviations:
+   MD_Rte_0624:  MISRA rule: Rule8.3
+     Reason:     This MISRA violation is a consequence from the RTE requirements [SWS_Rte_01007] [SWS_Rte_01150].
+                 The typedefs are never used in the same context.
+     Risk:       No functional risk. Only a cast to uint8* is performed.
+     Prevention: Not required.
+
+   MD_Rte_3206:  MISRA rule: Rule2.7
+     Reason:     The parameter are not used by the code in all possible code variants.
+     Risk:       No functional risk.
+     Prevention: Not required.
+
+*/
