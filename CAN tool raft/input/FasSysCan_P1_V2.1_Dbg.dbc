@@ -1,0 +1,852 @@
+VERSION "UNOFFICIAL-LATEST 2022-06-01 15:39:06"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FAA_FL XCP_Client FAA_RL ASMC FAA_RR CAN_Data_Logger FAA_FR UDS_Client
+
+
+BO_ 80 FAA_100HZ_FLT_PWR_FL: 4 FAA_FL
+ SG_ Faa_Sts_Pwr48_Fl_Qfr_Na : 30|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Pwr_UBus48_Fl_Est_Watt : 8|10@0- (4,0) [-1500|1500] "W"  ASMC
+ SG_ Faa_Sts_Sst_Fl_Na : 11|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Fl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Fl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 81 FAA_100HZ_FLT_PWR_FR: 4 FAA_FR
+ SG_ Faa_Sts_Pwr48_Fr_Qfr_Na : 30|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Pwr_UBus48_Fr_Est_Watt : 8|10@0- (4,0) [-1500|1500] "W"  ASMC
+ SG_ Faa_Sts_Sst_Fr_Na : 11|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Fr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Fr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 82 FAA_100HZ_FLT_PWR_RL: 4 FAA_RL
+ SG_ Faa_Sts_Pwr48_Rl_Qfr_Na : 30|2@0+ (1,0) [0|3] "N/A"  ASMC	
+ SG_ Faa_Pwr_UBus48_Rl_Est_Watt : 8|10@0- (4,0) [-1500|1500] "W"  ASMC
+ SG_ Faa_Sts_Sst_Rl_Na : 11|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Rl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Rl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 83 FAA_100HZ_FLT_PWR_RR: 4 FAA_RR
+ SG_ Faa_Sts_Pwr48_Rr_Qfr_Na : 30|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Pwr_UBus48_Rr_Est_Watt : 8|10@0- (4,0) [-1500|1500] "W"  ASMC
+ SG_ Faa_Sts_Sst_Rr_Na : 11|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Rr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_100Hz_Flt_Pwr_Rr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 768 ASMC_25HZ_ST_REQ_FAA: 1 ASMC
+ SG_ Asmc_Req_DaHlthTest_Na : 1|2@0+ (1,0) [0|2] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Ascc_St_Req_Na : 3|2@0+ (1,0) [0|2] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_25Hz_Sts_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+
+BO_ 256 ASMC_100HZ_STATY_ST_REQ_FAA: 3 ASMC
+ SG_ Fas_Sts_VehStsSpdLo_Qfr_Na : 21|2@0+ (1,0) [0|3] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Fas_Sts_VehSpdLo_Na : 23|2@0+ (1,0) [0|2] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Fas_Sts_VehStsStaty_Qfr_Na : 9|2@0+ (1,0) [0|3] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Fas_Sts_VehStaty_Na : 11|2@0+ (1,0) [0|2] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_100Hz_Sts_VehStaty_Crc : 3|8@0+ (1,0) [0|255] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_100Hz_Sts_VehStaty_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+
+BO_ 336 FAA_25HZ_ID_ST_FB_FL: 8 FAA_FL
+ SG_ Ascc_St_Fb_Fl_Na : 59|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_Id_Hw_Fl_Na : 35|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Ascc_Id_Sw_Fl_Na : 11|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Fl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Fl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 337 FAA_25HZ_ID_ST_FB_FR: 8 FAA_FR
+ SG_ Ascc_St_Fb_Fr_Na : 59|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_Id_Hw_Fr_Na : 35|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Ascc_Id_Sw_Fr_Na : 11|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Fr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Fr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 338 FAA_25HZ_ID_ST_FB_RL: 8 FAA_RL
+ SG_ Ascc_St_Fb_Rl_Na : 59|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_Id_Hw_Rl_Na : 35|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Ascc_Id_Sw_Rl_Na : 11|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Rl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Rl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 339 FAA_25HZ_ID_ST_FB_RR: 8 FAA_RR
+ SG_ Ascc_St_Fb_Rr_Na : 59|3@0+ (1,0) [0|5] "N/A"  ASMC
+ SG_ Faa_Id_Hw_Rr_Na : 35|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Ascc_Id_Sw_Rr_Na : 11|24@0+ (1,0) [0|16777215] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Rr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_25Hz_Id_StFb_Rr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 16 ASMC_1000HZ_F_CMD_FAA: 8 ASMC
+ SG_ Faa_Sts_F_Qfr_Na : 59|2@0+ (1,0) [0|3] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_F_Rr_AtActr_Cmd_Nwt : 55|12@0- (4,0) [-8000|8000] "N"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_F_Rl_AtActr_Cmd_Nwt : 35|12@0- (4,0) [-8000|8000] "N"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_F_Fr_AtActr_Cmd_Nwt : 31|12@0- (4,0) [-8000|8000] "N"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_F_Fl_AtActr_Cmd_Nwt : 11|12@0- (4,0) [-8000|8000] "N"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_1000Hz_F_Cmd_Crc : 3|8@0+ (1,0) [0|255] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_1000Hz_F_Cmd_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+
+BO_ 672 FAA_500HZ_A_WHL_FL: 4 FAA_FL
+ SG_ Whl_Sts_AZ_Fl_Qfr_Na : 29|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Whl_A_Z_Fl_AtAct_Est_Msec2 : 11|14@0- (0.015625,0) [-100|100] "m/s^2"  ASMC
+ SG_ Faa_500Hz_A_Whl_Fl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_500Hz_A_Whl_Fl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 673 FAA_500HZ_A_WHL_FR: 4 FAA_FR
+ SG_ Whl_Sts_AZ_Fr_Qfr_Na : 29|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Whl_A_Z_Fr_AtAct_Est_Msec2 : 11|14@0- (0.015625,0) [-100|100] "m/s^2"  ASMC
+ SG_ Faa_500Hz_A_Whl_Fr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_500Hz_A_Whl_Fr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 674 FAA_500HZ_A_WHL_RL: 4 FAA_RL
+ SG_ Whl_Sts_AZ_Rl_Qfr_Na : 29|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Whl_A_Z_Rl_AtAct_Est_Msec2 : 11|14@0- (0.015625,0) [-100|100] "m/s^2"  ASMC
+ SG_ Faa_500Hz_A_Whl_Rl_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_500Hz_A_Whl_Rl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 675 FAA_500HZ_A_WHL_RR: 4 FAA_RR
+ SG_ Whl_Sts_AZ_Rr_Qfr_Na : 29|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Whl_A_Z_Rr_AtAct_Est_Msec2 : 11|14@0- (0.015625,0) [-100|100] "m/s^2"  ASMC
+ SG_ Faa_500Hz_A_Whl_Rr_Crc : 3|8@0+ (1,0) [0|255] "N/A"  ASMC
+ SG_ Faa_500Hz_A_Whl_Rr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 769 ASMC_100HZ_ZL_MOFR_FAA: 8 ASMC
+ SG_ Faa_Sts_ZlMofr_Re_Qfr_Na : 61|2@0+ (1,0) [0|3] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Gain_Re_ZlFil_Na : 52|7@0+ (0.125,1) [1|10] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Wi_Re_ZlFil_Na : 43|7@0+ (0.015625,0) [0|1] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Frq_Re_ZlFil_Ce_Hz : 34|7@0+ (0.0625,2.5) [3|10] "Hz"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Mofr_Re_ZlGain_Na : 39|5@0+ (0.0625,0) [0|1] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Sts_ZlMofr_Fn_Qfr_Na : 25|2@0+ (1,0) [0|3] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Gain_Fn_ZlFil_Na : 16|7@0+ (0.125,1) [1|10] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Wi_Fn_ZlFil_Na : 23|7@0+ (0.015625,0) [0|1] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Frq_Fn_ZlFil_Ce_Hz : 14|7@0+ (0.0625,2.5) [3|10] "Hz"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Faa_Mofr_Fn_ZlGain_Na : 3|5@0+ (0.0625,0) [0|1] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+ SG_ Asmc_100Hz_Zl_Mofr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  FAA_FL,FAA_FR,FAA_RL,FAA_RR
+
+BO_ 1024 FAA_10HZ_CPBY_TEMP_FL: 3 FAA_FL
+ SG_ Faa_Sts_Temp_Fl_Qfr_Na : 19|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Temp_Fl_AtCtlr_DegC : 11|8@0- (1,43) [-40|125] "degC"  ASMC
+ SG_ Faa_Sts_ActunCpby_Fl_Qfr_Na : 13|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Amnt_ActunCpby_Fl_Na : 3|6@0+ (0.03125,0) [0|1] "N/A"  ASMC
+ SG_ Faa_10Hz_Cpby_Temp_Fl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 1025 FAA_10HZ_CPBY_TEMP_FR: 3 FAA_FR
+ SG_ Faa_Sts_Temp_Fr_Qfr_Na : 19|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Temp_Fr_AtCtlr_DegC : 11|8@0- (1,43) [-40|125] "degC"  ASMC
+ SG_ Faa_Sts_ActunCpby_Fr_Qfr_Na : 13|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Amnt_ActunCpby_Fr_Na : 3|6@0+ (0.03125,0) [0|1] "N/A"  ASMC
+ SG_ Faa_10Hz_Cpby_Temp_Fr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 1026 FAA_10HZ_CPBY_TEMP_RL: 3 FAA_RL
+ SG_ Faa_Sts_Temp_Rl_Qfr_Na : 19|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Temp_Rl_AtCtlr_DegC : 11|8@0- (1,43) [-40|125] "degC"  ASMC
+ SG_ Faa_Sts_ActunCpby_Rl_Qfr_Na : 13|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Amnt_ActunCpby_Rl_Na : 3|6@0+ (0.03125,0) [0|1] "N/A"  ASMC
+ SG_ Faa_10Hz_Cpby_Temp_Rl_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 1027 FAA_10HZ_CPBY_TEMP_RR: 3 FAA_RR
+ SG_ Faa_Sts_Temp_Rr_Qfr_Na : 19|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Temp_Rr_AtCtlr_DegC : 11|8@0- (1,43) [-40|125] "degC"  ASMC
+ SG_ Faa_Sts_ActunCpby_Rr_Qfr_Na : 13|2@0+ (1,0) [0|3] "N/A"  ASMC
+ SG_ Faa_Amnt_ActunCpby_Rr_Na : 3|6@0+ (0.03125,0) [0|1] "N/A"  ASMC
+ SG_ Faa_10Hz_Cpby_Temp_Rr_AlvCtr : 7|4@0+ (1,0) [0|14] "N/A"  ASMC
+
+BO_ 1104 UDS_REQ_FAA_FL: 8 UDS_Client
+ SG_ Uds_Req_Byte7_Faa_Fl_Na : 63|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte6_Faa_Fl_Na : 55|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte5_Faa_Fl_Na : 47|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte4_Faa_Fl_Na : 39|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte3_Faa_Fl_Na : 31|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte2_Faa_Fl_Na : 23|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte1_Faa_Fl_Na : 15|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+ SG_ Uds_Req_Byte0_Faa_Fl_Na : 7|8@0+ (1,0) [0|255] "N/A"  FAA_FL
+
+BO_ 1105 UDS_REQ_FAA_FR: 8 UDS_Client
+ SG_ Uds_Req_Byte7_Faa_Fr_Na : 63|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte6_Faa_Fr_Na : 55|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte5_Faa_Fr_Na : 47|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte4_Faa_Fr_Na : 39|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte3_Faa_Fr_Na : 31|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte2_Faa_Fr_Na : 23|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte1_Faa_Fr_Na : 15|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+ SG_ Uds_Req_Byte0_Faa_Fr_Na : 7|8@0+ (1,0) [0|255] "N/A"  FAA_FR
+
+BO_ 1106 UDS_REQ_FAA_RL: 8 UDS_Client
+ SG_ Uds_Req_Byte7_Faa_Rl_Na : 63|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte6_Faa_Rl_Na : 55|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte5_Faa_Rl_Na : 47|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte4_Faa_Rl_Na : 39|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte3_Faa_Rl_Na : 31|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte2_Faa_Rl_Na : 23|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte1_Faa_Rl_Na : 15|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+ SG_ Uds_Req_Byte0_Faa_Rl_Na : 7|8@0+ (1,0) [0|255] "N/A"  FAA_RL
+
+BO_ 1107 UDS_REQ_FAA_RR: 8 UDS_Client
+ SG_ Uds_Req_Byte7_Faa_Rr_Na : 63|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte6_Faa_Rr_Na : 55|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte5_Faa_Rr_Na : 47|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte4_Faa_Rr_Na : 39|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte3_Faa_Rr_Na : 31|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte2_Faa_Rr_Na : 23|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte1_Faa_Rr_Na : 15|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+ SG_ Uds_Req_Byte0_Faa_Rr_Na : 7|8@0+ (1,0) [0|255] "N/A"  FAA_RR
+
+BO_ 1109 XCP_REQ_FAA_FL: 32 XCP_Client
+ SG_ Xcp_Req_Byte3_Faa_Fl : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FL
+ SG_ Xcp_Req_Byte2_Faa_Fl : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FL
+ SG_ Xcp_Req_Byte1_Faa_Fl : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FL
+ SG_ Xcp_Req_Byte0_Faa_Fl : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FL
+
+BO_ 1110 XCP_REQ_FAA_FR: 32 XCP_Client
+ SG_ Xcp_Req_Byte3_Faa_Fr : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FR
+ SG_ Xcp_Req_Byte2_Faa_Fr : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FR
+ SG_ Xcp_Req_Byte1_Faa_Fr : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FR
+ SG_ Xcp_Req_Byte0_Faa_Fr : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_FR
+
+BO_ 1111 XCP_REQ_FAA_RL: 32 XCP_Client
+ SG_ Xcp_Req_Byte3_Faa_Rl : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RL
+ SG_ Xcp_Req_Byte2_Faa_Rl : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RL
+ SG_ Xcp_Req_Byte1_Faa_Rl : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RL
+ SG_ Xcp_Req_Byte0_Faa_Rl : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RL
+
+BO_ 1112 XCP_REQ_FAA_RR: 32 XCP_Client
+ SG_ Xcp_Req_Byte3_Faa_Rr : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RR
+ SG_ Xcp_Req_Byte2_Faa_Rr : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RR
+ SG_ Xcp_Req_Byte1_Faa_Rr : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RR
+ SG_ Xcp_Req_Byte0_Faa_Rr : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  FAA_RR
+
+BO_ 1120 UDS_RESP_FAA_FL: 8 FAA_FL
+ SG_ Uds_Resp_Byte7_Faa_Fl_Na : 63|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte6_Faa_Fl_Na : 55|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte5_Faa_Fl_Na : 47|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte4_Faa_Fl_Na : 39|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte3_Faa_Fl_Na : 31|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte2_Faa_Fl_Na : 23|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte1_Faa_Fl_Na : 15|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte0_Faa_Fl_Na : 7|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+
+BO_ 1121 UDS_RESP_FAA_FR: 8 FAA_FR
+ SG_ Uds_Resp_Byte7_Faa_Fr_Na : 63|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte6_Faa_Fr_Na : 55|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte5_Faa_Fr_Na : 47|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte4_Faa_Fr_Na : 39|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte3_Faa_Fr_Na : 31|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte2_Faa_Fr_Na : 23|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte1_Faa_Fr_Na : 15|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte0_Faa_Fr_Na : 7|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+
+BO_ 1122 UDS_RESP_FAA_RL: 8 FAA_RL
+ SG_ Uds_Resp_Byte7_Faa_Rl_Na : 63|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte6_Faa_Rl_Na : 55|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte5_Faa_Rl_Na : 47|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte4_Faa_Rl_Na : 39|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte3_Faa_Rl_Na : 31|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte2_Faa_Rl_Na : 23|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte1_Faa_Rl_Na : 15|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte0_Faa_Rl_Na : 7|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+
+BO_ 1123 UDS_RESP_FAA_RR: 8 FAA_RR
+ SG_ Uds_Resp_Byte7_Faa_Rr_Na : 63|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte6_Faa_Rr_Na : 55|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte5_Faa_Rr_Na : 47|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte4_Faa_Rr_Na : 39|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte3_Faa_Rr_Na : 31|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte2_Faa_Rr_Na : 23|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte1_Faa_Rr_Na : 15|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+ SG_ Uds_Resp_Byte0_Faa_Rr_Na : 7|8@0+ (1,0) [0|255] "N/A"  UDS_Client
+
+BO_ 1125 XCP_RESP_FAA_FL: 32 FAA_FL
+ SG_ Xcp_Resp_Byte3_Faa_Fl : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte2_Faa_Fl : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte1_Faa_Fl : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte0_Faa_Fl : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+
+BO_ 1126 XCP_RESP_FAA_FR: 32 FAA_FR
+ SG_ Xcp_Resp_Byte3_Faa_Fr : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte2_Faa_Fr : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte1_Faa_Fr : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte0_Faa_Fr : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+
+BO_ 1127 XCP_RESP_FAA_RL: 32 FAA_RL
+ SG_ Xcp_Resp_Byte3_Faa_Rl : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte2_Faa_Rl : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte1_Faa_Rl : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte0_Faa_Rl : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+
+BO_ 1128 XCP_RESP_FAA_RR: 32 FAA_RR
+ SG_ Xcp_Resp_Byte3_Faa_Rr : 199|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte2_Faa_Rr : 135|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte1_Faa_Rr : 71|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+ SG_ Xcp_Resp_Byte0_Faa_Rr : 7|64@0+ (1,0) [0|1.84467440737096E+019] "N/A"  XCP_Client
+
+BO_ 1792 FAA_DA_HLTH_FL: 1 FAA_FL
+ SG_ Faa_Da_Fl_Hlth_Na : 7|3@0+ (1,0) [0|4] "N/A"  ASMC
+
+BO_ 1793 FAA_DA_HLTH_FR: 1 FAA_FR
+ SG_ Faa_Da_Fr_Hlth_Na : 7|3@0+ (1,0) [0|4] "N/A"  ASMC
+
+BO_ 1794 FAA_DA_HLTH_RL: 1 FAA_RL
+ SG_ Faa_Da_Rl_Hlth_Na : 7|3@0+ (1,0) [0|4] "N/A"  ASMC
+
+BO_ 1795 FAA_DA_HLTH_RR: 1 FAA_RR
+ SG_ Faa_Da_Rr_Hlth_Na : 7|3@0+ (1,0) [0|4] "N/A"  ASMC
+
+BO_ 944 FAA_DBG_1000Hz_MSG1: 12 FAA_RR
+ SG_ Emm_Tq_Est_Nm : 84|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Tq_Dmd_Nm : 79|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Vagr_OfRotr_Radsec : 57|10@0- (2,0) [-1000|1000] "rad/s"  CAN_Data_Logger
+ SG_ Emm_Ag_OfRotr_Rad : 52|11@0+ (0.00390625,0) [0|6.2832] "rad"  CAN_Data_Logger
+ SG_ Av_Pg_Var_AtHrm_Pa : 33|13@0+ (2048,0) [0|10000000] "Pa"  CAN_Data_Logger
+ SG_ Whl_A_Z_AtAct_Est_Msec2 : 31|14@0- (0.015625,0) [-100|100] "m/s^2"  CAN_Data_Logger
+ SG_ Emm_U_Bus_Volt : 12|13@0+ (0.015625,0) [0|81.9] "V"  CAN_Data_Logger
+ SG_ Emm_I_Bus_Ampr : 7|11@0- (0.0625,0) [-50|50] "A"  CAN_Data_Logger
+
+BO_ 946 FAA_DBG_100Hz_MSG1: 3 FAA_RL
+ SG_ Ascc_St_Fb_Na : 21|3@0+ (1,0) [0|4] "N/A"  CAN_Data_Logger
+ SG_ Emm_Err_Code_Na : 13|8@0+ (1,0) [0|255] "N/A"  CAN_Data_Logger
+ SG_ Emm_Temp_Brdg_DegC : 7|10@0- (0.25,50) [-50|150] "degC"  CAN_Data_Logger
+
+BO_ 704 FAA_DBG_500Hz_MSG_FL: 8 FAA_FL
+ SG_ Emm_Tq_Est_Fl_Nm : 40|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Vagr_OfRotr_Fl_Radsec : 34|10@0- (2,0) [-1000|1000] "rad/s"  CAN_Data_Logger
+ SG_ Av_Pg_Var_AtHrm_Fl_Pa : 31|13@0+ (2048,0) [0|10000000] "Pa"  CAN_Data_Logger
+ SG_ Emm_U_Bus_Fl_Volt : 12|13@0+ (0.015625,0) [0|81.9] "V"  CAN_Data_Logger
+ SG_ Emm_I_Bus_Fl_Ampr : 7|11@0- (0.0625,0) [-50|50] "A"  CAN_Data_Logger
+
+BO_ 705 FAA_DBG_500Hz_MSG_FR: 8 FAA_FR
+ SG_ Emm_Tq_Est_Fr_Nm : 40|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Vagr_OfRotr_Fr_Radsec : 34|10@0- (2,0) [-1000|1000] "rad/s"  CAN_Data_Logger
+ SG_ Av_Pg_Var_AtHrm_Fr_Pa : 31|13@0+ (2048,0) [0|10000000] "Pa"  CAN_Data_Logger
+ SG_ Emm_U_Bus_Fr_Volt : 12|13@0+ (0.015625,0) [0|81.9] "V"  CAN_Data_Logger
+ SG_ Emm_I_Bus_Fr_Ampr : 7|11@0- (0.0625,0) [-50|50] "A"  CAN_Data_Logger
+
+BO_ 706 FAA_DBG_500Hz_MSG_RL: 8 FAA_RL
+ SG_ Emm_Tq_Est_Rl_Nm : 40|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Vagr_OfRotr_Rl_Radsec : 34|10@0- (2,0) [-1000|1000] "rad/s"  CAN_Data_Logger
+ SG_ Av_Pg_Var_AtHrm_Rl_Pa : 31|13@0+ (2048,0) [0|10000000] "Pa"  CAN_Data_Logger
+ SG_ Emm_U_Bus_Rl_Volt : 12|13@0+ (0.015625,0) [0|81.9] "V"  CAN_Data_Logger
+ SG_ Emm_I_Bus_Rl_Ampr : 7|11@0- (0.0625,0) [-50|50] "A"  CAN_Data_Logger
+
+BO_ 707 FAA_DBG_500Hz_MSG_RR: 8 FAA_RR
+ SG_ Emm_Tq_Est_Rr_Nm : 40|11@0- (0.0078125,0) [-6|6] "Nm"  CAN_Data_Logger
+ SG_ Emm_Vagr_OfRotr_Rr_Radsec : 34|10@0- (2,0) [-1000|1000] "rad/s"  CAN_Data_Logger
+ SG_ Av_Pg_Var_AtHrm_Rr_Pa : 31|13@0+ (2048,0) [0|10000000] "Pa"  CAN_Data_Logger
+ SG_ Emm_U_Bus_Rr_Volt : 12|13@0+ (0.015625,0) [0|81.9] "V"  CAN_Data_Logger
+ SG_ Emm_I_Bus_Rr_Ampr : 7|11@0- (0.0625,0) [-50|50] "A"  CAN_Data_Logger
+
+BO_TX_BU_ 944 : FAA_FL,FAA_FR,FAA_RL,FAA_RR;
+BO_TX_BU_ 946 : FAA_RR,FAA_FL,FAA_FR,FAA_RL;
+
+
+CM_ SG_ 80 Faa_Sts_Pwr48_Fl_Qfr_Na "Signal Qualifier - FAS Corner Actuator 48V Bus Power Estimate Front Left";
+CM_ SG_ 80 Faa_Pwr_UBus48_Fl_Est_Watt "FAS Corner Actuator Unfiltered 48V Bus Power Estimate Front Left";
+CM_ SG_ 80 Faa_Sts_Sst_Fl_Na "Corner fault status from the FAS Corner Actuator:0 - Uninitialized1 - Healthy2 - Safe State {Passive, Instant, Corner}3 - Passive Operation Internal4 - Passive Operation External5 - Safe State {TBD1}";
+CM_ SG_ 80 Faa_100Hz_Flt_Pwr_Fl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 80 Faa_100Hz_Flt_Pwr_Fl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 81 Faa_Sts_Pwr48_Fr_Qfr_Na "Signal Qualifier - FAS Corner Actuator 48V Bus Power Estimate Front Right";
+CM_ SG_ 81 Faa_Pwr_UBus48_Fr_Est_Watt "FAS Corner Actuator Unfiltered 48V Bus Power Estimate Front Right";
+CM_ SG_ 81 Faa_Sts_Sst_Fr_Na "Corner fault status from the FAS Corner Actuator:0 - Uninitialized1 - Healthy2 - Safe State {Passive, Instant, Corner}3 - Passive Operation Internal4 - Passive Operation External5 - Safe State {TBD1}";
+CM_ SG_ 81 Faa_100Hz_Flt_Pwr_Fr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 81 Faa_100Hz_Flt_Pwr_Fr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 82 Faa_Sts_Pwr48_Rl_Qfr_Na "Signal Qualifier - FAS Corner Actuator 48V Bus Power Estimate Rear Left";
+CM_ SG_ 82 Faa_Pwr_UBus48_Rl_Est_Watt "FAS Corner Actuator Unfiltered 48V Bus Power Estimate Rear Left";
+CM_ SG_ 82 Faa_Sts_Sst_Rl_Na "Corner fault status from the FAS Corner Actuator:0 - Uninitialized1 - Healthy2 - Safe State {Passive, Instant, Corner}3 - Passive Operation Internal4 - Passive Operation External5 - Safe State {TBD1}";
+CM_ SG_ 82 Faa_100Hz_Flt_Pwr_Rl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 82 Faa_100Hz_Flt_Pwr_Rl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 83 Faa_Sts_Pwr48_Rr_Qfr_Na "Signal Qualifier - FAS Corner Actuator 48V Bus Power Estimate Rear Right";
+CM_ SG_ 83 Faa_Pwr_UBus48_Rr_Est_Watt "FAS Corner Actuator Unfiltered 48V Bus Power Estimate Rear Right";
+CM_ SG_ 83 Faa_Sts_Sst_Rr_Na "Corner fault status from the FAS Corner Actuator:0 - Uninitialized1 - Healthy2 - Safe State {Passive, Instant, Corner}3 - Passive Operation Internal4 - Passive Operation External5 - Safe State {TBD1}";
+CM_ SG_ 83 Faa_100Hz_Flt_Pwr_Rr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 83 Faa_100Hz_Flt_Pwr_Rr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 768 Asmc_Req_DaHlthTest_Na "Corner health test request for the FAS Corner Actuator";
+CM_ SG_ 768 Ascc_St_Req_Na "Corner state request for the FAS Corner Actuator";
+CM_ SG_ 768 Asmc_25Hz_Sts_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 256 Fas_Sts_VehStsSpdLo_Qfr_Na "Signal Qualifier for FAS System Vehicle Speed Low Status";
+CM_ SG_ 256 Fas_Sts_VehSpdLo_Na "Indicates whether vehicle speed is above or below the FAS system vehicle low-speed threshold:0 - Unknown1 - Low Speed2 - Medium-to-High Speed";
+CM_ SG_ 256 Fas_Sts_VehStsStaty_Qfr_Na "Signal Qualifier for: FAS System Vehicle Stationary Status";
+CM_ SG_ 256 Fas_Sts_VehStaty_Na "Indicates whether vehicle is stationary or non-stationary:0 - Unknown1 - Non-Stationary2 - Stationary";
+CM_ SG_ 256 Asmc_100Hz_Sts_VehStaty_Crc "Message cyclic redundant checksum";
+CM_ SG_ 256 Asmc_100Hz_Sts_VehStaty_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 336 Ascc_St_Fb_Fl_Na "FAS Corner Actuator State Feedback Front Left";
+CM_ SG_ 336 Faa_Id_Hw_Fl_Na "FAA hardware Compatibility ID";
+CM_ SG_ 336 Ascc_Id_Sw_Fl_Na "FAA software Compatibility ID";
+CM_ SG_ 336 Faa_25Hz_Id_StFb_Fl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 336 Faa_25Hz_Id_StFb_Fl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 337 Ascc_St_Fb_Fr_Na "FAS Corner Actuator State Feedback Front Right";
+CM_ SG_ 337 Faa_Id_Hw_Fr_Na "FAA hardware Compatibility ID";
+CM_ SG_ 337 Ascc_Id_Sw_Fr_Na "FAA software Compatibility ID";
+CM_ SG_ 337 Faa_25Hz_Id_StFb_Fr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 337 Faa_25Hz_Id_StFb_Fr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 338 Ascc_St_Fb_Rl_Na "FAS Corner Actuator State Feedback Rear Left";
+CM_ SG_ 338 Faa_Id_Hw_Rl_Na "FAA hardware Compatibility ID";
+CM_ SG_ 338 Ascc_Id_Sw_Rl_Na "FAA software Compatibility ID";
+CM_ SG_ 338 Faa_25Hz_Id_StFb_Rl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 338 Faa_25Hz_Id_StFb_Rl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 339 Ascc_St_Fb_Rr_Na "FAS Corner Actuator State Feedback Rear Right";
+CM_ SG_ 339 Faa_Id_Hw_Rr_Na "FAA hardware Compatibility ID";
+CM_ SG_ 339 Ascc_Id_Sw_Rr_Na "FAA software Compatibility ID";
+CM_ SG_ 339 Faa_25Hz_Id_StFb_Rr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 339 Faa_25Hz_Id_StFb_Rr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 16 Faa_Sts_F_Qfr_Na "Quality Flag for FAS Corner Actuator Force Commands";
+CM_ SG_ 16 Faa_F_Rr_AtActr_Cmd_Nwt "FAS Corner Actuator Force Command Rear Right";
+CM_ SG_ 16 Faa_F_Rl_AtActr_Cmd_Nwt "FAS Corner Actuator Force Command Rear Left";
+CM_ SG_ 16 Faa_F_Fr_AtActr_Cmd_Nwt "FAS Corner Actuator Force Command Front Right";
+CM_ SG_ 16 Faa_F_Fl_AtActr_Cmd_Nwt "FAS Corner Actuator Force Command Front Left";
+CM_ SG_ 16 Asmc_1000Hz_F_Cmd_Crc "Message cyclic redundant checksum";
+CM_ SG_ 16 Asmc_1000Hz_F_Cmd_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 672 Whl_Sts_AZ_Fl_Qfr_Na "Signal Qualifier for Front left wheel acceleration in z-direction (at-the-actuator)";
+CM_ SG_ 672 Whl_A_Z_Fl_AtAct_Est_Msec2 "Front left wheel acceleration in z-direction (at-the-actuator) in m/sec^2";
+CM_ SG_ 672 Faa_500Hz_A_Whl_Fl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 672 Faa_500Hz_A_Whl_Fl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 673 Whl_Sts_AZ_Fr_Qfr_Na "Signal Qualifier for Front right wheel acceleration in z-direction (at-the-actuator)";
+CM_ SG_ 673 Whl_A_Z_Fr_AtAct_Est_Msec2 "Front right wheel acceleration in z-direction (at-the-actuator) in m/sec^2";
+CM_ SG_ 673 Faa_500Hz_A_Whl_Fr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 673 Faa_500Hz_A_Whl_Fr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 674 Whl_Sts_AZ_Rl_Qfr_Na "Signal Qualifier for Rear left wheel acceleration in z-direction (at-the-actuator)";
+CM_ SG_ 674 Whl_A_Z_Rl_AtAct_Est_Msec2 "Rear left wheel acceleration in z-direction (at-the-actuator) in m/sec^2";
+CM_ SG_ 674 Faa_500Hz_A_Whl_Rl_Crc "Message cyclic redundant checksum";
+CM_ SG_ 674 Faa_500Hz_A_Whl_Rl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 675 Whl_Sts_AZ_Rr_Qfr_Na "Signal Qualifier for Rear right wheel acceleration in z-direction (at-the-actuator)";
+CM_ SG_ 675 Whl_A_Z_Rr_AtAct_Est_Msec2 "Rear right wheel acceleration in z-direction (at-the-actuator) in m/sec^2";
+CM_ SG_ 675 Faa_500Hz_A_Whl_Rr_Crc "Message cyclic redundant checksum";
+CM_ SG_ 675 Faa_500Hz_A_Whl_Rr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 769 Faa_Sts_ZlMofr_Re_Qfr_Na "Signal Qualifier for FAS Corner Actuator Impedance Modifiers Rear";
+CM_ SG_ 769 Faa_Gain_Re_ZlFil_Na "FAS Corner Actuator Impedance Notch Filter Gain Rear";
+CM_ SG_ 769 Faa_Wi_Re_ZlFil_Na "FAS Corner Actuator Impedance Notch Filter Width Rear";
+CM_ SG_ 769 Faa_Frq_Re_ZlFil_Ce_Hz "FAS Corner Actuator Impedance Notch Center Frequency Rear";
+CM_ SG_ 769 Faa_Mofr_Re_ZlGain_Na "FAS Corner Actuator Impedance Gain Modifier Rear";
+CM_ SG_ 769 Faa_Sts_ZlMofr_Fn_Qfr_Na "Signal Qualifier for FAS Corner Actuator Impedance Modifiers Front";
+CM_ SG_ 769 Faa_Gain_Fn_ZlFil_Na "FAS Corner Actuator Impedance Notch Filter Gain Front";
+CM_ SG_ 769 Faa_Wi_Fn_ZlFil_Na "FAS Corner Actuator Impedance Notch Filter Width Front";
+CM_ SG_ 769 Faa_Frq_Fn_ZlFil_Ce_Hz "FAS Corner Actuator Impedance Notch Center Frequency Front";
+CM_ SG_ 769 Faa_Mofr_Fn_ZlGain_Na "FAS Corner Actuator Impedance Gain Modifier Front";
+CM_ SG_ 769 Asmc_100Hz_Zl_Mofr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 1024 Faa_Sts_Temp_Fl_Qfr_Na "Signal Qualifier - FAS Corner Actuator Controller Temperature Front Left";
+CM_ SG_ 1024 Faa_Temp_Fl_AtCtlr_DegC "FAS Corner Actuator Controller Temperature Front Left";
+CM_ SG_ 1024 Faa_Sts_ActunCpby_Fl_Qfr_Na "Signal Qualifier - FAS Corner Actuator Actuation Capability Front Left";
+CM_ SG_ 1024 Faa_Amnt_ActunCpby_Fl_Na "FAS Corner Actuator Actuation Capability Front Left";
+CM_ SG_ 1024 Faa_10Hz_Cpby_Temp_Fl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 1025 Faa_Sts_Temp_Fr_Qfr_Na "Signal Qualifier - FAS Corner Actuator Controller Temperature Front Right";
+CM_ SG_ 1025 Faa_Temp_Fr_AtCtlr_DegC "FAS Corner Actuator Controller Temperature Front Right";
+CM_ SG_ 1025 Faa_Sts_ActunCpby_Fr_Qfr_Na "Signal Qualifier - FAS Corner Actuator Actuation Capability Front Right";
+CM_ SG_ 1025 Faa_Amnt_ActunCpby_Fr_Na "FAS Corner Actuator Actuation Capability Front Right";
+CM_ SG_ 1025 Faa_10Hz_Cpby_Temp_Fr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 1026 Faa_Sts_Temp_Rl_Qfr_Na "Signal Qualifier - FAS Corner Actuator Controller Temperature Rear Left";
+CM_ SG_ 1026 Faa_Temp_Rl_AtCtlr_DegC "FAS Corner Actuator Controller Temperature Rear Left";
+CM_ SG_ 1026 Faa_Sts_ActunCpby_Rl_Qfr_Na "Signal Qualifier - FAS Corner Actuator Actuation Capability Rear Left";
+CM_ SG_ 1026 Faa_Amnt_ActunCpby_Rl_Na "FAS Corner Actuator Actuation Capability Rear Left";
+CM_ SG_ 1026 Faa_10Hz_Cpby_Temp_Rl_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 1027 Faa_Sts_Temp_Rr_Qfr_Na "Signal Qualifier - FAS Corner Actuator Controller Temperature Rear Right";
+CM_ SG_ 1027 Faa_Temp_Rr_AtCtlr_DegC "FAS Corner Actuator Controller Temperature Rear Right";
+CM_ SG_ 1027 Faa_Sts_ActunCpby_Rr_Qfr_Na "Signal Qualifier - FAS Corner Actuator Actuation Capability Rear Right";
+CM_ SG_ 1027 Faa_Amnt_ActunCpby_Rr_Na "FAS Corner Actuator Actuation Capability Rear Right";
+CM_ SG_ 1027 Faa_10Hz_Cpby_Temp_Rr_AlvCtr "Message alive counter (AUTOSAR E2E Profile 1)";
+CM_ SG_ 1104 Uds_Req_Byte7_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 7)";
+CM_ SG_ 1104 Uds_Req_Byte6_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 6)";
+CM_ SG_ 1104 Uds_Req_Byte5_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 5)";
+CM_ SG_ 1104 Uds_Req_Byte4_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 4)";
+CM_ SG_ 1104 Uds_Req_Byte3_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 3)";
+CM_ SG_ 1104 Uds_Req_Byte2_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 2)";
+CM_ SG_ 1104 Uds_Req_Byte1_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 1)";
+CM_ SG_ 1104 Uds_Req_Byte0_Faa_Fl_Na "FAS Corner Actuator Diagnostic Request Front Left (Byte 0)";
+CM_ SG_ 1105 Uds_Req_Byte7_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 7)";
+CM_ SG_ 1105 Uds_Req_Byte6_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 6)";
+CM_ SG_ 1105 Uds_Req_Byte5_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 5)";
+CM_ SG_ 1105 Uds_Req_Byte4_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 4)";
+CM_ SG_ 1105 Uds_Req_Byte3_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 3)";
+CM_ SG_ 1105 Uds_Req_Byte2_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 2)";
+CM_ SG_ 1105 Uds_Req_Byte1_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 1)";
+CM_ SG_ 1105 Uds_Req_Byte0_Faa_Fr_Na "FAS Corner Actuator Diagnostic Request Front Right (Byte 0)";
+CM_ SG_ 1106 Uds_Req_Byte7_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 7)";
+CM_ SG_ 1106 Uds_Req_Byte6_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 6)";
+CM_ SG_ 1106 Uds_Req_Byte5_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 5)";
+CM_ SG_ 1106 Uds_Req_Byte4_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 4)";
+CM_ SG_ 1106 Uds_Req_Byte3_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 3)";
+CM_ SG_ 1106 Uds_Req_Byte2_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 2)";
+CM_ SG_ 1106 Uds_Req_Byte1_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 1)";
+CM_ SG_ 1106 Uds_Req_Byte0_Faa_Rl_Na "FAS Corner Actuator Diagnostic Request Rear Left (Byte 0)";
+CM_ SG_ 1107 Uds_Req_Byte7_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 7)";
+CM_ SG_ 1107 Uds_Req_Byte6_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 6)";
+CM_ SG_ 1107 Uds_Req_Byte5_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 5)";
+CM_ SG_ 1107 Uds_Req_Byte4_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 4)";
+CM_ SG_ 1107 Uds_Req_Byte3_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 3)";
+CM_ SG_ 1107 Uds_Req_Byte2_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 2)";
+CM_ SG_ 1107 Uds_Req_Byte1_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 1)";
+CM_ SG_ 1107 Uds_Req_Byte0_Faa_Rr_Na "FAS Corner Actuator Diagnostic Request Rear Right (Byte 0)";
+CM_ BO_ 1109 "_";
+CM_ SG_ 1109 Xcp_Req_Byte3_Faa_Fl "EMM Corner Actuator XCP request to Front Left (Byte 3)";
+CM_ SG_ 1109 Xcp_Req_Byte2_Faa_Fl "EMM Corner Actuator XCP request to Front Left (Byte 2)";
+CM_ SG_ 1109 Xcp_Req_Byte1_Faa_Fl "EMM Corner Actuator XCP request to Front Left (Byte 1)";
+CM_ SG_ 1109 Xcp_Req_Byte0_Faa_Fl "EMM Corner Actuator XCP request to Front Left (Byte 0)";
+CM_ SG_ 1110 Xcp_Req_Byte3_Faa_Fr "EMM Corner Actuator XCP Request Front Right (Byte 3)";
+CM_ SG_ 1110 Xcp_Req_Byte2_Faa_Fr "EMM Corner Actuator XCP Request Front Right (Byte 2)";
+CM_ SG_ 1110 Xcp_Req_Byte1_Faa_Fr "EMM Corner Actuator XCP Request Front Right (Byte 1)";
+CM_ SG_ 1110 Xcp_Req_Byte0_Faa_Fr "EMM Corner Actuator XCP Request Front Right (Byte 0)";
+CM_ SG_ 1111 Xcp_Req_Byte3_Faa_Rl "EMM Corner Actuator XCP request Rear Left (Byte 3)";
+CM_ SG_ 1111 Xcp_Req_Byte2_Faa_Rl "EMM Corner Actuator XCP request Rear Left (Byte 2)";
+CM_ SG_ 1111 Xcp_Req_Byte1_Faa_Rl "EMM Corner Actuator XCP request Rear Left (Byte 1)";
+CM_ SG_ 1111 Xcp_Req_Byte0_Faa_Rl "EMM Corner Actuator XCP request Rear Left (Byte 0)";
+CM_ SG_ 1112 Xcp_Req_Byte3_Faa_Rr "EMM Corner Actuator XCP request Rear Right (Byte 3)";
+CM_ SG_ 1112 Xcp_Req_Byte2_Faa_Rr "EMM Corner Actuator XCP request Rear Right (Byte 2)";
+CM_ SG_ 1112 Xcp_Req_Byte1_Faa_Rr "EMM Corner Actuator XCP request Rear Right (Byte 1)";
+CM_ SG_ 1112 Xcp_Req_Byte0_Faa_Rr "EMM Corner Actuator XCP request Rear Right (Byte 0)";
+CM_ SG_ 1120 Uds_Resp_Byte7_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 7)";
+CM_ SG_ 1120 Uds_Resp_Byte6_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 6)";
+CM_ SG_ 1120  Uds_Resp_Byte5_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 5)";
+CM_ SG_ 1120 Uds_Resp_Byte4_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 4)";
+CM_ SG_ 1120 Uds_Resp_Byte3_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 3)";
+CM_ SG_ 1120 Uds_Resp_Byte2_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 2)";
+CM_ SG_ 1120 Uds_Resp_Byte1_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 1)";
+CM_ SG_ 1120 Uds_Resp_Byte0_Faa_Fl_Na "FAS Corner Actuator Diagnostic Response Front Left (Byte 0)";
+CM_ SG_ 1121 Uds_Resp_Byte7_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 7)";
+CM_ SG_ 1121 Uds_Resp_Byte6_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 6)";
+CM_ SG_ 1121 Uds_Resp_Byte5_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 5)";
+CM_ SG_ 1121 Uds_Resp_Byte4_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 4)";
+CM_ SG_ 1121 Uds_Resp_Byte3_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 3)";
+CM_ SG_ 1121 Uds_Resp_Byte2_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 2)";
+CM_ SG_ 1121 Uds_Resp_Byte1_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 1)";
+CM_ SG_ 1121 Uds_Resp_Byte0_Faa_Fr_Na "FAS Corner Actuator Diagnostic Response Front Right (Byte 0)";
+CM_ SG_ 1122 Uds_Resp_Byte7_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 7)";
+CM_ SG_ 1122 Uds_Resp_Byte6_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 6)";
+CM_ SG_ 1122 Uds_Resp_Byte5_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 5)";
+CM_ SG_ 1122 Uds_Resp_Byte4_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 4)";
+CM_ SG_ 1122 Uds_Resp_Byte3_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 3)";
+CM_ SG_ 1122 Uds_Resp_Byte2_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 2)";
+CM_ SG_ 1122 Uds_Resp_Byte1_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 1)";
+CM_ SG_ 1122 Uds_Resp_Byte0_Faa_Rl_Na "FAS Corner Actuator Diagnostic Response Rear Left (Byte 0)";
+CM_ SG_ 1123 Uds_Resp_Byte7_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 7)";
+CM_ SG_ 1123 Uds_Resp_Byte6_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 6)";
+CM_ SG_ 1123 Uds_Resp_Byte5_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 5)";
+CM_ SG_ 1123 Uds_Resp_Byte4_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 4)";
+CM_ SG_ 1123 Uds_Resp_Byte3_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 3)";
+CM_ SG_ 1123 Uds_Resp_Byte2_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 2)";
+CM_ SG_ 1123 Uds_Resp_Byte1_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 1)";
+CM_ SG_ 1123 Uds_Resp_Byte0_Faa_Rr_Na "FAS Corner Actuator Diagnostic Response Rear Right (Byte 0)";
+CM_ SG_ 1125 Xcp_Resp_Byte3_Faa_Fl "XCP response from Front Left Actuator to XCP client (Byte 3)";
+CM_ SG_ 1125 Xcp_Resp_Byte2_Faa_Fl "XCP response from Front Left Actuator to XCP client (Byte 2)";
+CM_ SG_ 1125 Xcp_Resp_Byte1_Faa_Fl "XCP response from Front Left Actuator to XCP client (Byte 1)";
+CM_ SG_ 1125 Xcp_Resp_Byte0_Faa_Fl "XCP response from Front Left Actuator to XCP client (Byte 0)";
+CM_ SG_ 1126 Xcp_Resp_Byte3_Faa_Fr "XCP response from Front Right Actuator to XCP client (Byte 3)";
+CM_ SG_ 1126 Xcp_Resp_Byte2_Faa_Fr "XCP response from Front Right Actuator to XCP client (Byte 2)";
+CM_ SG_ 1126 Xcp_Resp_Byte1_Faa_Fr "XCP response from Front Right Actuator to XCP client (Byte 1)";
+CM_ SG_ 1126 Xcp_Resp_Byte0_Faa_Fr "XCP response from Front Right Actuator to XCP client (Byte 0)";
+CM_ SG_ 1127 Xcp_Resp_Byte3_Faa_Rl "XCP response from Rear Left Actuator to XCP client (Byte 3)";
+CM_ SG_ 1127 Xcp_Resp_Byte2_Faa_Rl "XCP response from Rear Left Actuator to XCP client (Byte 2)";
+CM_ SG_ 1127 Xcp_Resp_Byte1_Faa_Rl "XCP response from Rear Left Actuator to XCP client (Byte 1)";
+CM_ SG_ 1127 Xcp_Resp_Byte0_Faa_Rl "XCP response from Rear Left Actuator to XCP client (Byte 0)";
+CM_ SG_ 1128 Xcp_Resp_Byte3_Faa_Rr "XCP response from Rear Right Actuator to XCP client (Byte 3)";
+CM_ SG_ 1128 Xcp_Resp_Byte2_Faa_Rr "XCP response from Rear Right Actuator to XCP client (Byte 2)";
+CM_ SG_ 1128 Xcp_Resp_Byte1_Faa_Rr "XCP response from Rear Right Actuator to XCP client (Byte 1)";
+CM_ SG_ 1128 Xcp_Resp_Byte0_Faa_Rr "XCP response from Rear Right Actuator to XCP client (Byte 0)";
+CM_ SG_ 1792 Faa_Da_Fl_Hlth_Na "FAS Corner Actuator Health Test Data Front Left";
+CM_ SG_ 1793 Faa_Da_Fr_Hlth_Na "FAS Corner Actuator Health Test Data Front Right";
+CM_ SG_ 1794 Faa_Da_Rl_Hlth_Na "FAS Corner Actuator Health Test Data Rear Left";
+CM_ SG_ 1795 Faa_Da_Rr_Hlth_Na "FAS Corner Actuator Health Test Data Rear Right";
+CM_ SG_ 944 Emm_Tq_Est_Nm "Estimated Motor Torque for the FAS Corner on test";
+CM_ SG_ 944 Emm_Tq_Dmd_Nm "Motor Torque Demand for the FAS Corner on test";
+CM_ SG_ 944 Emm_Vagr_OfRotr_Radsec "Rotor Angular Velocity for the FAS Corner on test";
+CM_ SG_ 944 Emm_Ag_OfRotr_Rad "Rotor Angle for the FAS Corner on test";
+CM_ SG_ 944 Av_Pg_Var_AtHrm_Pa "Variable Pressure for the FAS Corner on test";
+CM_ SG_ 944 Whl_A_Z_AtAct_Est_Msec2 "Wheel acceleration in z-direction (at-the-actuator) in m/sec^2";
+CM_ SG_ 944 Emm_U_Bus_Volt "Bus Voltage for the FAS Corner on test";
+CM_ SG_ 944 Emm_I_Bus_Ampr "Bus Current for the FAS Corner on test";
+CM_ SG_ 946 Ascc_St_Fb_Na "Corner state feedback from the FAS Corner Actuator";
+CM_ SG_ 946 Emm_Err_Code_Na "Error Code for the FAS Corner on test";
+CM_ SG_ 946 Emm_Temp_Brdg_DegC "Bridge Temperature for the FAS Corner on test";
+CM_ SG_ 704 Emm_Tq_Est_Fl_Nm "Estimated Motor Torque for the FAS Corner Actuator Front Left";
+CM_ SG_ 704 Emm_Vagr_OfRotr_Fl_Radsec "Rotor Angular Velocity for the FAS Corner Actuator Front Left";
+CM_ SG_ 704 Av_Pg_Var_AtHrm_Fl_Pa "Variable Pressure for the FAS Corner Actuator Front Left";
+CM_ SG_ 704 Emm_U_Bus_Fl_Volt "Bus Voltage for the FAS Corner Actuator Front Left";
+CM_ SG_ 704 Emm_I_Bus_Fl_Ampr "Bus Current for the FAS Corner Actuator Front Left";
+CM_ SG_ 705 Emm_Tq_Est_Fr_Nm "Estimated Motor Torque for the FAS Corner Actuator Front Right";
+CM_ SG_ 705 Emm_Vagr_OfRotr_Fr_Radsec "Rotor Angular Velocity for the FAS Corner Actuator Front Right";
+CM_ SG_ 705 Av_Pg_Var_AtHrm_Fr_Pa "Variable Pressure for the FAS Corner Actuator Front Right";
+CM_ SG_ 705 Emm_U_Bus_Fr_Volt "Bus Voltage for the FAS Corner Actuator Front Right";
+CM_ SG_ 705 Emm_I_Bus_Fr_Ampr "Bus Current for the FAS Corner Actuator Front Right";
+CM_ SG_ 706 Emm_Tq_Est_Rl_Nm "Estimated Motor Torque for the FAS Corner Actuator Rear Left";
+CM_ SG_ 706 Emm_Vagr_OfRotr_Rl_Radsec "Rotor Angular Velocity for the FAS Corner Actuator Rear Left";
+CM_ SG_ 706 Av_Pg_Var_AtHrm_Rl_Pa "Variable Pressure for the FAS Corner Actuator Rear Left";
+CM_ SG_ 706 Emm_U_Bus_Rl_Volt "Bus Voltage for the FAS Corner Actuator Rear Left";
+CM_ SG_ 706 Emm_I_Bus_Rl_Ampr "Bus Current for the FAS Corner Actuator Rear Left";
+CM_ SG_ 707 Emm_Tq_Est_Rr_Nm "Estimated Motor Torque for the FAS Corner Actuator Rear Right";
+CM_ SG_ 707 Emm_Vagr_OfRotr_Rr_Radsec "Rotor Angular Velocity for the FAS Corner Actuator Rear Right";
+CM_ SG_ 707 Av_Pg_Var_AtHrm_Rr_Pa "Variable Pressure for the FAS Corner Actuator Rear Right";
+CM_ SG_ 707 Emm_U_Bus_Rr_Volt "Bus Voltage for the FAS Corner Actuator Rear Right";
+CM_ SG_ 707 Emm_I_Bus_Rr_Ampr "Bus Current for the FAS Corner Actuator Rear Right";
+BA_DEF_ BO_  "DiagConnection" INT 0 65535;
+BA_DEF_  "NBTMax" INT 8 25;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclic","spontaneous","cyclicIfActive","spontaneousWithDelay","NotUsed3","NotUsed4","NotUsed5","NotUsed6","NoMsgSendType";
+BA_DEF_ BO_  "DiagFdOnly" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigStartValue" INT 0 2147483647;
+BA_DEF_  "SyncJumpWidthMax" INT 1 4;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgTimeoutTime" INT 0 65535;
+BA_DEF_ SG_  "SC_Verification" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "SCP_AuthInfoTxLength" INT 0 512;
+BA_DEF_ BO_  "SCP_DataId" INT 0 65535;
+BA_DEF_  "SamplePointMax" INT 50 100;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 255;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "NBTMin" INT 8 25;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_ BO_  "SCP_FreshnessValueId" INT 0 65535;
+BA_DEF_ BO_  "SCP_FreshnessValueTxLength" INT 0 512;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 2147483647;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_  "SyncJumpWidthMin" INT 1 4;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_  "SamplePointMin" INT 50 100;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "SC_Message" ENUM  "No","Yes";
+BA_DEF_ BO_  "SCP_FreshnessValueLength" INT 0 512;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NoMsgSendType";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved0","reserved1","reserved2","reserved3","reserved4","reserved5","reserved6","reserved7","reserved8","reserved9","reserved10","reserved11","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "DiagFdOnly" "No";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "SyncJumpWidthMax" 1;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgTimeoutTime" 0;
+BA_DEF_DEF_  "SC_Verification" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "SCP_AuthInfoTxLength" 28;
+BA_DEF_DEF_  "SCP_DataId" 0;
+BA_DEF_DEF_  "SamplePointMax" 90;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "DBName" "Generic DBC";
+BA_DEF_DEF_  "NBTMin" 8;
+BA_DEF_DEF_  "Manufacturer" "ClearMotion Inc.";
+BA_DEF_DEF_  "SCP_FreshnessValueId" 0;
+BA_DEF_DEF_  "SCP_FreshnessValueTxLength" 4;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "SyncJumpWidthMin" 1;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "SC_Message" "No";
+BA_DEF_DEF_  "SCP_FreshnessValueLength" 48;
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_ "BusType" "CAN FD";
+BA_ "DBName" "FASSystemCAN";
+BA_ "GenMsgCycleTime" BO_ 80 10;
+BA_ "GenMsgSendType" BO_ 80 0;
+BA_ "VFrameFormat" BO_ 80 14;
+BA_ "GenMsgCycleTime" BO_ 81 10;
+BA_ "GenMsgSendType" BO_ 81 0;
+BA_ "VFrameFormat" BO_ 81 14;
+BA_ "GenMsgCycleTime" BO_ 82 10;
+BA_ "GenMsgSendType" BO_ 82 0;
+BA_ "VFrameFormat" BO_ 82 14;
+BA_ "GenMsgCycleTime" BO_ 83 10;
+BA_ "GenMsgSendType" BO_ 83 0;
+BA_ "VFrameFormat" BO_ 83 14;
+BA_ "GenMsgCycleTime" BO_ 768 40;
+BA_ "GenMsgSendType" BO_ 768 0;
+BA_ "VFrameFormat" BO_ 768 14;
+BA_ "GenMsgCycleTime" BO_ 256 10;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "VFrameFormat" BO_ 256 14;
+BA_ "GenMsgCycleTime" BO_ 336 40;
+BA_ "GenMsgSendType" BO_ 336 0;
+BA_ "VFrameFormat" BO_ 336 14;
+BA_ "GenMsgCycleTime" BO_ 337 40;
+BA_ "GenMsgSendType" BO_ 337 0;
+BA_ "VFrameFormat" BO_ 337 14;
+BA_ "GenMsgCycleTime" BO_ 338 40;
+BA_ "GenMsgSendType" BO_ 338 0;
+BA_ "VFrameFormat" BO_ 338 14;
+BA_ "GenMsgCycleTime" BO_ 339 40;
+BA_ "GenMsgSendType" BO_ 339 0;
+BA_ "VFrameFormat" BO_ 339 14;
+BA_ "GenMsgCycleTime" BO_ 16 1;
+BA_ "GenMsgSendType" BO_ 16 0;
+BA_ "VFrameFormat" BO_ 16 14;
+BA_ "GenMsgCycleTime" BO_ 672 2;
+BA_ "GenMsgSendType" BO_ 672 0;
+BA_ "VFrameFormat" BO_ 672 14;
+BA_ "GenMsgCycleTime" BO_ 673 2;
+BA_ "GenMsgSendType" BO_ 673 0;
+BA_ "VFrameFormat" BO_ 673 14;
+BA_ "GenMsgCycleTime" BO_ 674 2;
+BA_ "GenMsgSendType" BO_ 674 0;
+BA_ "VFrameFormat" BO_ 674 14;
+BA_ "GenMsgCycleTime" BO_ 675 2;
+BA_ "GenMsgSendType" BO_ 675 0;
+BA_ "VFrameFormat" BO_ 675 14;
+BA_ "GenMsgCycleTime" BO_ 769 10;
+BA_ "GenMsgSendType" BO_ 769 0;
+BA_ "VFrameFormat" BO_ 769 14;
+BA_ "GenMsgCycleTime" BO_ 1024 100;
+BA_ "GenMsgSendType" BO_ 1024 0;
+BA_ "VFrameFormat" BO_ 1024 14;
+BA_ "GenMsgCycleTime" BO_ 1025 100;
+BA_ "GenMsgSendType" BO_ 1025 0;
+BA_ "VFrameFormat" BO_ 1025 14;
+BA_ "GenMsgCycleTime" BO_ 1026 100;
+BA_ "GenMsgSendType" BO_ 1026 0;
+BA_ "VFrameFormat" BO_ 1026 14;
+BA_ "GenMsgCycleTime" BO_ 1027 100;
+BA_ "GenMsgSendType" BO_ 1027 0;
+BA_ "VFrameFormat" BO_ 1027 14;
+BA_ "DiagRequest" BO_ 1104 1;
+BA_ "GenMsgSendType" BO_ 1104 1;
+BA_ "VFrameFormat" BO_ 1104 14;
+BA_ "DiagRequest" BO_ 1105 1;
+BA_ "GenMsgSendType" BO_ 1105 1;
+BA_ "VFrameFormat" BO_ 1105 14;
+BA_ "DiagRequest" BO_ 1106 1;
+BA_ "GenMsgSendType" BO_ 1106 1;
+BA_ "VFrameFormat" BO_ 1106 14;
+BA_ "DiagRequest" BO_ 1107 1;
+BA_ "GenMsgSendType" BO_ 1107 1;
+BA_ "VFrameFormat" BO_ 1107 14;
+BA_ "GenMsgSendType" BO_ 1109 1;
+BA_ "VFrameFormat" BO_ 1109 14;
+BA_ "GenMsgSendType" BO_ 1110 1;
+BA_ "VFrameFormat" BO_ 1110 14;
+BA_ "GenMsgSendType" BO_ 1111 1;
+BA_ "VFrameFormat" BO_ 1111 14;
+BA_ "GenMsgSendType" BO_ 1112 1;
+BA_ "VFrameFormat" BO_ 1112 14;
+BA_ "DiagResponse" BO_ 1120 1;
+BA_ "GenMsgSendType" BO_ 1120 1;
+BA_ "VFrameFormat" BO_ 1120 14;
+BA_ "DiagResponse" BO_ 1121 1;
+BA_ "GenMsgSendType" BO_ 1121 1;
+BA_ "VFrameFormat" BO_ 1121 14;
+BA_ "DiagResponse" BO_ 1122 1;
+BA_ "GenMsgSendType" BO_ 1122 1;
+BA_ "VFrameFormat" BO_ 1122 14;
+BA_ "DiagResponse" BO_ 1123 1;
+BA_ "GenMsgSendType" BO_ 1123 1;
+BA_ "VFrameFormat" BO_ 1123 14;
+BA_ "GenMsgSendType" BO_ 1125 1;
+BA_ "VFrameFormat" BO_ 1125 14;
+BA_ "GenMsgSendType" BO_ 1126 1;
+BA_ "VFrameFormat" BO_ 1126 14;
+BA_ "GenMsgSendType" BO_ 1127 1;
+BA_ "VFrameFormat" BO_ 1127 14;
+BA_ "GenMsgSendType" BO_ 1128 1;
+BA_ "VFrameFormat" BO_ 1128 14;
+BA_ "GenMsgSendType" BO_ 1792 1;
+BA_ "VFrameFormat" BO_ 1792 14;
+BA_ "GenMsgSendType" BO_ 1793 1;
+BA_ "VFrameFormat" BO_ 1793 14;
+BA_ "GenMsgSendType" BO_ 1794 1;
+BA_ "VFrameFormat" BO_ 1794 14;
+BA_ "GenMsgSendType" BO_ 1795 1;
+BA_ "VFrameFormat" BO_ 1795 14;
+BA_ "GenMsgCycleTime" BO_ 944 1;
+BA_ "GenMsgSendType" BO_ 944 0;
+BA_ "VFrameFormat" BO_ 944 14;
+BA_ "GenMsgCycleTime" BO_ 946 10;
+BA_ "GenMsgSendType" BO_ 946 0;
+BA_ "VFrameFormat" BO_ 946 14;
+BA_ "GenMsgCycleTime" BO_ 704 2;
+BA_ "GenMsgSendType" BO_ 704 0;
+BA_ "VFrameFormat" BO_ 704 14;
+BA_ "GenMsgCycleTime" BO_ 705 2;
+BA_ "GenMsgSendType" BO_ 705 0;
+BA_ "VFrameFormat" BO_ 705 14;
+BA_ "GenMsgCycleTime" BO_ 706 2;
+BA_ "GenMsgSendType" BO_ 706 0;
+BA_ "VFrameFormat" BO_ 706 14;
+BA_ "GenMsgCycleTime" BO_ 707 2;
+BA_ "GenMsgSendType" BO_ 707 0;
+BA_ "VFrameFormat" BO_ 707 14;
+BA_ "GenSigStartValue" SG_ 769 Faa_Gain_Re_ZlFil_Na 32;
+BA_ "GenSigStartValue" SG_ 769 Faa_Wi_Re_ZlFil_Na 32;
+BA_ "GenSigStartValue" SG_ 769 Faa_Frq_Re_ZlFil_Ce_Hz 40;
+BA_ "GenSigStartValue" SG_ 769 Faa_Mofr_Re_ZlGain_Na 8;
+BA_ "GenSigStartValue" SG_ 769 Faa_Gain_Fn_ZlFil_Na 32;
+BA_ "GenSigStartValue" SG_ 769 Faa_Wi_Fn_ZlFil_Na 32;
+BA_ "GenSigStartValue" SG_ 769 Faa_Frq_Fn_ZlFil_Ce_Hz 40;
+BA_ "GenSigStartValue" SG_ 769 Faa_Mofr_Fn_ZlGain_Na 8;
+BA_ "GenSigStartValue" SG_ 1024 Faa_Temp_Fl_AtCtlr_DegC -20;
+BA_ "GenSigStartValue" SG_ 1024 Faa_Amnt_ActunCpby_Fl_Na 32;
+BA_ "GenSigStartValue" SG_ 1025 Faa_Temp_Fr_AtCtlr_DegC -20;
+BA_ "GenSigStartValue" SG_ 1025 Faa_Amnt_ActunCpby_Fr_Na 32;
+BA_ "GenSigStartValue" SG_ 1026 Faa_Temp_Rl_AtCtlr_DegC -20;
+BA_ "GenSigStartValue" SG_ 1026 Faa_Amnt_ActunCpby_Rl_Na 32;
+BA_ "GenSigStartValue" SG_ 1027 Faa_Temp_Rr_AtCtlr_DegC -20;
+BA_ "GenSigStartValue" SG_ 1027 Faa_Amnt_ActunCpby_Rr_Na 32;
+VAL_ 80 Faa_Sts_Pwr48_Fl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 80 Faa_Sts_Sst_Fl_Na 0 "Uninitialized" 1 "Healthy" 2 "Safe_State_Passive_Instant_Corner" 3 "Passive_Operation_Internal" 4 "Passive_Operation_External" 5 "Safe_State_TBD1" ;
+VAL_ 81 Faa_Sts_Pwr48_Fr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 81 Faa_Sts_Sst_Fr_Na 0 "Uninitialized" 1 "Healthy" 2 "Safe_State_Passive_Instant_Corner" 3 "Passive_Operation_Internal" 4 "Passive_Operation_External" 5 "Safe_State_TBD1" ;
+VAL_ 82 Faa_Sts_Pwr48_Rl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 82 Faa_Sts_Sst_Rl_Na 0 "Uninitialized" 1 "Healthy" 2 "Safe_State_Passive_Instant_Corner" 3 "Passive_Operation_Internal" 4 "Passive_Operation_External" 5 "Safe_State_TBD1" ;
+VAL_ 83 Faa_Sts_Pwr48_Rr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 83 Faa_Sts_Sst_Rr_Na 0 "Uninitialized" 1 "Healthy" 2 "Safe_State_Passive_Instant_Corner" 3 "Passive_Operation_Internal" 4 "Passive_Operation_External" 5 "Safe_State_TBD1" ;
+VAL_ 768 Asmc_Req_DaHlthTest_Na 0 "Do_not_Derive_Health_Test_Diagnostic_Data" 1 "Derive_Health_Test_Diagnostic_Data" 2 "RESERVED" ;
+VAL_ 768 Ascc_St_Req_Na 0 "Uninitialized" 1 "Go_To_Corner_Sleep_State" 2 "Go_To_Corner_Active_State" ;
+VAL_ 256 Fas_Sts_VehStsSpdLo_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "NA" 3 "Unhealthy" ;
+VAL_ 256 Fas_Sts_VehSpdLo_Na 0 "Unknown" 1 "Low_Speed" 2 "Medium_to_High_Speed" ;
+VAL_ 256 Fas_Sts_VehStsStaty_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "NA" 3 "Unhealthy" ;
+VAL_ 256 Fas_Sts_VehStaty_Na 0 "Unknown" 1 "Non_Stationary" 2 "Stationary" ;
+VAL_ 336 Ascc_St_Fb_Fl_Na 0 "Uninitialized" 1 "Corner_Standby_State" 2 "Corner_Active_State" 3 "Corner_Shutdown_In_Progress_State" 4 "Corner_Shutdown_Complete_State" 5 "Corner_Undefined_State" ;
+VAL_ 337 Ascc_St_Fb_Fr_Na 0 "Uninitialized" 1 "Corner_Standby_State" 2 "Corner_Active_State" 3 "Corner_Shutdown_In_Progress_State" 4 "Corner_Shutdown_Complete_State" 5 "Corner_Undefined_State" ;
+VAL_ 338 Ascc_St_Fb_Rl_Na 0 "Uninitialized" 1 "Corner_Standby_State" 2 "Corner_Active_State" 3 "Corner_Shutdown_In_Progress_State" 4 "Corner_Shutdown_Complete_State" 5 "Corner_Undefined_State" ;
+VAL_ 339 Ascc_St_Fb_Rr_Na 0 "Uninitialized" 1 "Corner_Standby_State" 2 "Corner_Active_State" 3 "Corner_Shutdown_In_Progress_State" 4 "Corner_Shutdown_Complete_State" 5 "Corner_Undefined_State" ;
+VAL_ 16 Faa_Sts_F_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 672 Whl_Sts_AZ_Fl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 673 Whl_Sts_AZ_Fr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 674 Whl_Sts_AZ_Rl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 675 Whl_Sts_AZ_Rr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 769 Faa_Sts_ZlMofr_Re_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 769 Faa_Sts_ZlMofr_Fn_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1024 Faa_Sts_Temp_Fl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1024 Faa_Sts_ActunCpby_Fl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1025 Faa_Sts_Temp_Fr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1025 Faa_Sts_ActunCpby_Fr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1026 Faa_Sts_Temp_Rl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1026 Faa_Sts_ActunCpby_Rl_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1027 Faa_Sts_Temp_Rr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1027 Faa_Sts_ActunCpby_Rr_Qfr_Na 0 "Uninitialized" 1 "Healthy" 2 "Degraded" 3 "Unhealthy" ;
+VAL_ 1792 Faa_Da_Fl_Hlth_Na 0 "Not_Started" 1 "In_Progress" 2 "Complete_Full_Data" 3 "Aborted_Partial_Data" 4 "Aborted_No_Data" ;
+VAL_ 1793 Faa_Da_Fr_Hlth_Na 0 "Not_Started" 1 "In_Progress" 2 "Complete_Full_Data" 3 "Aborted_Partial_Data" 4 "Aborted_No_Data" ;
+VAL_ 1794 Faa_Da_Rl_Hlth_Na 0 "Not_Started" 1 "In_Progress" 2 "Complete_Full_Data" 3 "Aborted_Partial_Data" 4 "Aborted_No_Data" ;
+VAL_ 1795 Faa_Da_Rr_Hlth_Na 0 "Not_Started" 1 "In_Progress" 2 "Complete_Full_Data" 3 "Aborted_Partial_Data" 4 "Aborted_No_Data" ;
+VAL_ 946 Ascc_St_Fb_Na 0 "Uninitialized" 1 "Corner_Standby_State" 2 "Corner_Active_State" 3 "Corner_Shutdown_State" 4 "Corner_Undefined_State" ;
+
